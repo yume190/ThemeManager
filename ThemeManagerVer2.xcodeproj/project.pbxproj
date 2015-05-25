@@ -14,6 +14,14 @@
 		A841AC541B12FDEE006B1035 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A841AC531B12FDEE006B1035 /* Images.xcassets */; };
 		A841AC571B12FDEE006B1035 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A841AC551B12FDEE006B1035 /* LaunchScreen.xib */; };
 		A841AC631B12FDEE006B1035 /* ThemeManagerVer2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841AC621B12FDEE006B1035 /* ThemeManagerVer2Tests.swift */; };
+		A841AC711B12FE79006B1035 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841AC701B12FE79006B1035 /* ThemeManager.swift */; };
+		A841AC731B12FEB1006B1035 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841AC721B12FEB1006B1035 /* ThemeProtocol.swift */; };
+		A841AC751B12FED5006B1035 /* TextThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841AC741B12FED5006B1035 /* TextThemeProtocol.swift */; };
+		A841AC771B12FFA4006B1035 /* ThemeA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841AC761B12FFA4006B1035 /* ThemeA.swift */; };
+		A841AC791B12FFCE006B1035 /* ThemeB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841AC781B12FFCE006B1035 /* ThemeB.swift */; };
+		A841AC7B1B130045006B1035 /* ColorThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841AC7A1B130045006B1035 /* ColorThemeProtocol.swift */; };
+		A841AC7D1B13005C006B1035 /* FontThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841AC7C1B13005C006B1035 /* FontThemeProtocol.swift */; };
+		A841AC7F1B130081006B1035 /* ImageThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A841AC7E1B130081006B1035 /* ImageThemeProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,14 @@
 		A841AC5C1B12FDEE006B1035 /* ThemeManagerVer2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThemeManagerVer2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A841AC611B12FDEE006B1035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A841AC621B12FDEE006B1035 /* ThemeManagerVer2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManagerVer2Tests.swift; sourceTree = "<group>"; };
+		A841AC701B12FE79006B1035 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		A841AC721B12FEB1006B1035 /* ThemeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		A841AC741B12FED5006B1035 /* TextThemeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextThemeProtocol.swift; sourceTree = "<group>"; };
+		A841AC761B12FFA4006B1035 /* ThemeA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeA.swift; sourceTree = "<group>"; };
+		A841AC781B12FFCE006B1035 /* ThemeB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeB.swift; sourceTree = "<group>"; };
+		A841AC7A1B130045006B1035 /* ColorThemeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorThemeProtocol.swift; sourceTree = "<group>"; };
+		A841AC7C1B13005C006B1035 /* FontThemeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontThemeProtocol.swift; sourceTree = "<group>"; };
+		A841AC7E1B130081006B1035 /* ImageThemeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageThemeProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,7 @@
 		A841AC461B12FDEE006B1035 /* ThemeManagerVer2 */ = {
 			isa = PBXGroup;
 			children = (
+				A841AC6C1B12FE12006B1035 /* ThemeManager */,
 				A841AC491B12FDEE006B1035 /* AppDelegate.swift */,
 				A841AC4E1B12FDEE006B1035 /* ViewController.swift */,
 				A841AC501B12FDEE006B1035 /* Main.storyboard */,
@@ -113,6 +130,45 @@
 				A841AC611B12FDEE006B1035 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A841AC6C1B12FE12006B1035 /* ThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				A841AC6D1B12FE60006B1035 /* src */,
+				A841AC6E1B12FE60006B1035 /* ThemeA */,
+				A841AC6F1B12FE60006B1035 /* ThemeB */,
+			);
+			path = ThemeManager;
+			sourceTree = "<group>";
+		};
+		A841AC6D1B12FE60006B1035 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A841AC701B12FE79006B1035 /* ThemeManager.swift */,
+				A841AC721B12FEB1006B1035 /* ThemeProtocol.swift */,
+				A841AC741B12FED5006B1035 /* TextThemeProtocol.swift */,
+				A841AC7A1B130045006B1035 /* ColorThemeProtocol.swift */,
+				A841AC7C1B13005C006B1035 /* FontThemeProtocol.swift */,
+				A841AC7E1B130081006B1035 /* ImageThemeProtocol.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A841AC6E1B12FE60006B1035 /* ThemeA */ = {
+			isa = PBXGroup;
+			children = (
+				A841AC761B12FFA4006B1035 /* ThemeA.swift */,
+			);
+			path = ThemeA;
+			sourceTree = "<group>";
+		};
+		A841AC6F1B12FE60006B1035 /* ThemeB */ = {
+			isa = PBXGroup;
+			children = (
+				A841AC781B12FFCE006B1035 /* ThemeB.swift */,
+			);
+			path = ThemeB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +271,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A841AC7B1B130045006B1035 /* ColorThemeProtocol.swift in Sources */,
+				A841AC731B12FEB1006B1035 /* ThemeProtocol.swift in Sources */,
+				A841AC7D1B13005C006B1035 /* FontThemeProtocol.swift in Sources */,
 				A841AC4F1B12FDEE006B1035 /* ViewController.swift in Sources */,
+				A841AC751B12FED5006B1035 /* TextThemeProtocol.swift in Sources */,
 				A841AC4D1B12FDEE006B1035 /* ThemeManagerVer2.xcdatamodeld in Sources */,
+				A841AC791B12FFCE006B1035 /* ThemeB.swift in Sources */,
+				A841AC7F1B130081006B1035 /* ImageThemeProtocol.swift in Sources */,
+				A841AC771B12FFA4006B1035 /* ThemeA.swift in Sources */,
 				A841AC4A1B12FDEE006B1035 /* AppDelegate.swift in Sources */,
+				A841AC711B12FE79006B1035 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
